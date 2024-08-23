@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>css pricing table project</title>
+    <link
+      rel="icon"
+      href="./assets/web-developer-logo-template_674356-207.jpg"/>
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+    <style>
+        html{
+            font-size: 22px;
+        }
+        body{
+  background-color:gainsboro;            
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+     }
+     @media(max-width:600px){
+      .container{
+        flex-direction: column;
+           width: 350px;
+        margin-left: 50px;
+      }
+      h1{
+        font-size: 30px;
+      }
+     }
+     @media(601px <= width <= 900px){
+        .container{
+            padding: 0px;
+            flex-direction: column;
+               width: 400px;
+            margin-left: 20%;
+        }
+        .pricing-plan{
+           
+        }
+     }
+     @media(901px <= width <= 1200px){
+        .container{
+            justify-content: center;
+        }
+        h1{
+            text-align: center;
+        }
+     }
+     @media(min-width:1200px){
+        .container{
+            justify-content: center;
+        }
+        h1{
+            text-align: center;
+        }
+     }
+        .container{
+            display: flex;
+            gap: 20px;
+            padding: 0px;
+            background-color:;
+        }
+        .lio{
+            background: linear-gradient(
+                to right,
+                darkblue 50px,
+                pink 
+
+                
+            );
+            padding-top: 7px;
+            border-radius: 10px;
+        }
+        .pricing-plan{
+            background-color: white;
+            border-radius: 10px;
+            padding-top: 10px;
+            height: 400px;
+            flex-basis: 400px;
+            min-width: 300px;
+            flex: 1;
+            
+        }
+        .plan-button{
+            margin-left: 50px;
+            background-color: orange;
+            font-size: 18px;
+            border-radius: 7px;
+            border: 0;
+            margin: 30px;
+            margin-left: 90px;
+        }
+        header{
+            background-color: cornflowerblue;
+            padding: 10px;
+            border-radius: 20px ;
+            margin: 10px;
+            text-align: center;
+        }
+        .potpot{
+            font-weight: 600;
+            float: right;
+            padding-top: 10px;
+
+        }
+        .link{
+            color: black;
+            text-decoration: none;
+        }
+        .plan-features{
+            list-style: none;
+        }
+        .plan-features li{
+            margin-bottom: 15px;
+        }
+       footer{
+        font-weight: 100;
+        margin-left: 50px;
+        font-size: 20px;
+       }
+    </style>
+  </head>
+  <body>
+    <img src="./assets/DevCom_Logo.png" alt="DevCom_Logo" width="200px">
+     <span class="potpot">
+       <a href="#" class="link">Sign Out</a> 
+     </span> 
+    <hr>
+    <h1> choose the plan that's right for you</h1>
+    <div class="container">
+     <div class="lio">
+        
+        <div class="pricing-plan">
+            <header > 
+            <div class="plan-tittle">basic</div>
+            
+            <div class="plan-price lionel"> $9.99/month </div>
+            
+        </header>
+        <hr>
+
+       
+
+            <ul class="plan-features">
+                <li>✅ 10GB storage</li>
+                <li>✅ 1 User</li>
+                <li>🚫 support</li>
+            </ul>
+            <button class="plan-button">Sign up</a>
+        </div>
+     </div>
+
+     <div class="lio">
+        
+        <div class="pricing-plan">
+            <header>
+            <div class="plan-tittle">Standard</div>
+            <div class="plan-price">$19.99/month</div>
+            
+          </header>
+          <hr>
+            <ul class="plan-features">
+                <li>✅ 50GB storage</li>
+                <li>✅ 5 User</li>
+                <li>✅ phone &amp; Email support</li>
+            </ul>
+            <button class="plan-button"> Sign up</a>
+        </div>
+
+     </div>
+
+     <div class="lio">
+        
+        <div class="pricing-plan">
+            <header>
+            <div class="plan-tittle">premium</div>
+            <div class="plan-price">$49.99/month</div>
+            
+        </header>
+        <hr>
+            <ul class="plan-features">
+                <li>✅ 100GB storage</li>
+                <li>✅ 10 User</li>
+                <li>✅ 24/7 support</li>
+            </ul>
+            <button class="plan-button"> Sign up</a>
+        </div>
+      </div>
+
+    </div> 
+    <br>
+    <footer>
+        <p>copyright &copy; lionel coder</p>
+    </footer>
+  </body>
+</html>
